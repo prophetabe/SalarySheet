@@ -29,4 +29,4 @@ const Manager2 = new Manager('Debbie Little',7205,'Finance')
 
 Manager1.GetAnnualSalary()
 Manager2.GetAnnualSalary()
-// Commit message: "Instantiate Manager objects and calculate annual salaries with bonuses."
+// Commit message: "Instantiate Manager objects and calculate annual salaries with bonuses"
