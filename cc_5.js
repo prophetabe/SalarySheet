@@ -12,20 +12,20 @@ GetAnnualSalary() {
 // Commit message: "Implement Employee class with name, salary properties, and annual salary calculation."
 class Manager extends Employee {
     constructor(name, salary, department) {
-       this.department= department;
-       super(name,salary);  
+        super(name,salary);
+        this.department= department;
     }
     GetAnnualSalary() {
-        bonus= this.salary * 0.15 * 12
-        salary= this.salary * 12
-        TotalAnnualSalary= bonus + this.salary
+       let bonus= this.salary * 0.15 * 12
+        let salary= this.salary * 12
+       let  TotalAnnualSalary= bonus + this.salary
        console.log(`Bonus: ${bonus}, Total Annual Salary with Bonus: ${TotalAnnualSalary}`)
        return bonus= this.salary * 0.15
     }
 }
 // Commit message: "Create Manager subclass with bonus calculation."
-Manager1 = new Manager('Bob Ross',6600,'Digital')
-Manager2 = new Manager('Debbie Little',7205,'Finance')
+const Manager1 = new Manager('Bob Ross',6600,'Digital')
+const Manager2 = new Manager('Debbie Little',7205,'Finance')
 
 Manager1.GetAnnualSalary()
 Manager2.GetAnnualSalary()
